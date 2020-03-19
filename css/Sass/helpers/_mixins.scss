@@ -16,3 +16,21 @@
 
     #{$property}: $value
 }
+
+// List Placeholder
+%list-styling{
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        margin:8px 15px;
+    }
+}
+
+// Anchor Styling
+%anchor-styling{
+    color: black;
+    text-decoration: none;
+}

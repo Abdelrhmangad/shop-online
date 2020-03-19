@@ -1,1 +1,135 @@
-/* No CSS *//*# sourceMappingURL=hompage.css.map */
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.site-pages ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-pages ul li {
+  margin: 8px 15px;
+}
+
+.site-pages ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #a1a1a1;
+}
+
+nav .logo img {
+  width: 130px;
+  height: 100px;
+}
+
+nav .search {
+  width: 25vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .search input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+}
+
+nav .search input[type="text"]::-webkit-input-placeholder {
+  color: silver;
+}
+
+nav .search input[type="text"]:-ms-input-placeholder {
+  color: silver;
+}
+
+nav .search input[type="text"]::-ms-input-placeholder {
+  color: silver;
+}
+
+nav .search input[type="text"]::placeholder {
+  color: silver;
+}
+
+nav .search button {
+  right: 8px;
+  background: transparent;
+  border: none;
+  text-align: center;
+  position: absolute;
+  font-size: 20px;
+  color: silver;
+}
+
+nav .log-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .log-cart .log-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-right: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav .log-cart .log-in img {
+  padding: 5px;
+}
+
+nav .log-cart .cart {
+  cursor: pointer;
+}
+
+.site-pages {
+  background: #eee333;
+}
+
+.site-pages ul li {
+  cursor: pointer;
+}
+/*# sourceMappingURL=hompage.css.map */
