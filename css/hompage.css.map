@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "hompage.scss",
+        "sass/helpers/_variables.scss",
+        "sass/helpers/_function.scss",
+        "sass/helpers/_mixins.scss",
+        "sass/components/_buttons.scss",
+        "sass/components/_products.scss",
+        "sass/components/_headerTags.scss",
+        "sass/Layouts/_1navbar.scss",
+        "sass/Layouts/_2header.scss",
+        "sass/Layouts/_3products.scss",
+        "sass/Layouts/_4footer.scss",
+        "sass/pages/_home.scss",
+        "sass/pages/_apparel.scss",
+        "sass/pages/_phoneAcces.scss"
+    ],
+    "names": [],
+    "file": "hompage.css"
+}

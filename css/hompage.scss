@@ -1,0 +1,29 @@
+// Importing all website Sass files
+
+
+// ---- STart Import Helpers
+@import "sass/helpers/variables";
+@import "sass/helpers/function";
+@import "sass/helpers/mixins";
+// ---- End Import Helpers
+
+// ---- Start Import Components
+@import "sass/components/buttons";
+@import "sass/components/products";
+@import "sass/components/headerTags";
+// ---- End Import Components
+
+// ---- Start import Layout
+@import "sass/Layouts/1navbar";
+@import "sass/Layouts/2header";
+@import "sass/Layouts/3products";
+@import "sass/Layouts/4footer";
+// ---- End import Layout
+
+// ---- Start Import Pages
+@import "sass/pages/home";
+@import "sass/pages/apparel";
+@import "sass/pages/phoneAcces";
+// ---- End Import Pages
+
+
