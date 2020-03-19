@@ -1,0 +1,36 @@
+main .carousel {
+  position: relative;
+}
+main .carousel .image {
+  width: 100%;
+  position: relative;
+}
+main .carousel .image img {
+  width: 100%;
+  position: absolute;
+}
+main .carousel .image img.one {
+  z-index: 2;
+}
+main .carousel .image img.two {
+  z-index: 4;
+}
+main .carousel .image img.three {
+  z-index: 1;
+}
+main .carousel .dots {
+  position: absolute;
+  background: red;
+  bottom: -490px;
+  left: 50%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .carousel .dots li {
+  width: 30px;
+  height: 30px;
+  background: rgba(119, 119, 119, 0.521);
+  border-radius: 50%;
+}

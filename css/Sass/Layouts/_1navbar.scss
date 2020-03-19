@@ -2,7 +2,6 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: rgb(161, 161, 161);
     .logo{
         img{
             width: 130px;
@@ -59,7 +58,7 @@ nav{
 }
 
 .site-pages{
-    background: #eee333;
+    background: #d6d6d6;
     ul{
         @extend %list-styling;
 

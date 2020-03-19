@@ -1,0 +1,58 @@
+main{
+    .carousel{
+        position: relative;
+        .image{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            p{
+                padding: 20px;
+                position: absolute;
+                z-index: 44444;
+                top:150px ;
+                left: 50px;
+                font-size: 42px;
+                color: rgb(255, 255, 255);
+                background: rgba(70, 70, 70, 0.493);
+                button{
+                    padding: 10px 33px;
+                    font-size: 1.7rem;
+                    background: blue;
+                    border: none;
+                    color: white;
+                    border-radius: 8px;
+                }
+            }
+            img{
+                width: 100%;
+                position: absolute;
+                &.one{
+                    z-index: 9;
+                }          
+            }
+        }
+
+        .dots{
+            position: absolute;
+            bottom: -450px;
+            left: 45%;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @extend %list-styling;
+            li{
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                background: rgba(39, 39, 39, 0.685);
+                border-radius: 50%;
+                border: 2px solid rgb(163, 160, 0);
+                &:hover{
+                    background:rgb(39, 39, 39); ;
+                }
+            }
+        }
+    }
+}
