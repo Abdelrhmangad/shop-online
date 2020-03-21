@@ -37,7 +37,7 @@
         }
     }
 
-    .best-deals{
+    .best-deals, .just-arrived{
         margin-top: 120px;
         h2{
             @extend %section-header;
@@ -83,4 +83,26 @@
             }
         }
     }
+    .just-arrived{
+        padding: 50px;
+        background-color: #f6f6f6;
+    }
+    // Start Categories footer Styles
+    .categories-footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+        .feat{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            .feat-icon{
+                margin-right: 10px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    // End Categories footer Styles
 }

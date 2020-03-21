@@ -28,7 +28,7 @@
   text-decoration: none;
 }
 
-.categories .most-popular h2, .categories .best-deals h2 {
+.categories .most-popular h2, .categories .best-deals h2, .categories .just-arrived h2 {
   text-align: center;
   margin: 0 0 30px;
   text-align: center;
@@ -265,11 +265,11 @@ main .carousel .dots li:hover {
   opacity: 1;
 }
 
-.categories .best-deals {
+.categories .best-deals, .categories .just-arrived {
   margin-top: 120px;
 }
 
-.categories .best-deals .deals-cards {
+.categories .best-deals .deals-cards, .categories .just-arrived .deals-cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -279,42 +279,77 @@ main .carousel .dots li:hover {
   margin: 10px 50px;
 }
 
-.categories .best-deals .deals-cards .deal {
+.categories .best-deals .deals-cards .deal, .categories .just-arrived .deals-cards .deal {
   margin: 0px 10px;
   padding: 10px;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
-.categories .best-deals .deals-cards .deal:hover {
+.categories .best-deals .deals-cards .deal:hover, .categories .just-arrived .deals-cards .deal:hover {
   -webkit-box-shadow: 0 0 10px rgba(43, 69, 83, 0.25);
           box-shadow: 0 0 10px rgba(43, 69, 83, 0.25);
   background: #fff;
 }
 
-.categories .best-deals .deals-cards .deal .deal-img img {
+.categories .best-deals .deals-cards .deal .deal-img img, .categories .just-arrived .deals-cards .deal .deal-img img {
   width: 100%;
   height: 300px;
 }
 
-.categories .best-deals .deals-cards .deal .deal-description {
+.categories .best-deals .deals-cards .deal .deal-description, .categories .just-arrived .deals-cards .deal .deal-description {
   line-height: 1.7rem;
   color: #444;
 }
 
-.categories .best-deals .deals-cards .deal .deal-description .deal-rate {
+.categories .best-deals .deals-cards .deal .deal-description .deal-rate, .categories .just-arrived .deals-cards .deal .deal-description .deal-rate {
   line-height: 2.2rem;
 }
 
-.categories .best-deals .deals-cards .deal .deal-description .deal-prize {
+.categories .best-deals .deals-cards .deal .deal-description .deal-prize, .categories .just-arrived .deals-cards .deal .deal-description .deal-prize {
   font-weight: bolder;
   font-size: 1.3em;
   line-height: 2rem;
 }
 
-.categories .best-deals .deals-cards .deal .deal-description .old-prize {
+.categories .best-deals .deals-cards .deal .deal-description .old-prize, .categories .just-arrived .deals-cards .deal .deal-description .old-prize {
   font-weight: 100;
   color: #adadad;
   text-decoration: line-through;
+}
+
+.categories .just-arrived {
+  padding: 50px;
+  background-color: #f6f6f6;
+}
+
+.categories .categories-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.categories .categories-footer .feat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.categories .categories-footer .feat .feat-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
 }
 /*# sourceMappingURL=hompage.css.map */
