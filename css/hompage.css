@@ -30,7 +30,7 @@
 
 .categories .most-popular h2, .categories .best-deals h2, .categories .just-arrived h2, .categories .trending-now h2 {
   text-align: center;
-  margin: 0 0 30px;
+  padding: 0 0 55px;
   text-align: center;
   font-size: 30px;
   font-weight: 700;
@@ -138,6 +138,11 @@ nav .log-cart .cart {
 
 .site-pages ul li {
   cursor: pointer;
+}
+
+.site-pages ul li a:hover {
+  text-decoration: underline;
+  color: #555555;
 }
 
 main .carousel {
@@ -268,6 +273,7 @@ main .carousel .dots li:hover {
 
 .categories .best-deals, .categories .just-arrived, .categories .trending-now {
   margin-top: 120px;
+  padding: 50px !important;
 }
 
 .categories .best-deals .deals-cards, .categories .just-arrived .deals-cards, .categories .trending-now .deals-cards {

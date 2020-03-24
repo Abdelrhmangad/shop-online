@@ -39,6 +39,7 @@
 
     .best-deals, .just-arrived,.trending-now{
         margin-top: 120px;
+        padding: 50px !important;
         h2{
             @extend %section-header;
         }
