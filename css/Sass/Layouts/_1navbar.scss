@@ -58,18 +58,19 @@ nav{
 }
 
 .site-pages{
-    background: #f5f5f5;
+    background: #2A7FE7;
     ul{
         @extend %list-styling;
 
         li{
             cursor: pointer;
             a{
+                color: #fafafa;
                 @extend %anchor-styling;
 
                 &:hover{
                     text-decoration: underline;
-                    color: rgb(85, 85, 85);
+                    color: #e6e6e6;
                 }
             }
         }
