@@ -43,3 +43,118 @@
     font-size: 30px;
     font-weight: 700;
 }
+
+
+// cards Hovering effect
+%hover-effect{
+    @include prefixer(box-shadow,0 0 10px rgba(43,69,83,.25));
+    background: #fff;
+    transform:scale(1.01);
+}
+
+// Categories footer styles
+%categories-footer-styles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px 20px;
+    margin-bottom: 50px;
+    background: #f6f6f6;
+
+    .feat{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        .feat-icon{
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+// Pages footer styles
+%page-footer-styles{
+    position: relative;
+    background-color:#222;
+    color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    padding: 20px;
+    margin-top: -50px;
+    .footer-divs{
+        margin: 20px;
+        .foot-div-header{
+            color: rgb(158, 158, 158);
+            font-weight: bolder;
+        }
+        .foot-div-content{
+            @extend %list-styling;
+            display: block;
+
+            li{
+                cursor: pointer;
+                transition: .2s all ease-in-out;
+                &:hover{
+                   color: rgb(158, 158, 158);
+                }
+            }
+        }
+    }
+    blockquote{
+        margin: auto;
+        font-size: .8em;
+        position: absolute;
+        bottom: 50px;
+        left: 40vw;
+    }
+}
+
+// Product styles for all page
+%products-styles-for-all-page{
+    margin-top: 120px;
+        padding: 50px !important;
+        h2{
+            @extend %section-header;
+        }
+        .deals-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 3fr;
+            margin: -10px 30px;
+
+            .deal{
+                margin: 0px 10px;
+                padding: 10px;
+                @include prefixer(transition, 0.4s all ease-in-out);
+                &:hover{
+                    @extend %hover-effect;
+                }
+                .deal-img{
+                    img{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+
+                .deal-description{
+                    line-height: 1.7rem;
+                    color: #444;
+                    .deal-rate{
+                        line-height: 2.2rem;
+                    }
+                    .deal-prize{
+                        font-weight: bolder;
+                        font-size: 1.3em;
+                        line-height: 2rem;
+                    }
+                    .old-prize{
+                        font-weight: 100;
+                        color: rgb(173, 173, 173);
+                        text-decoration: line-through;
+                    }
+                }
+            }
+        }
+}

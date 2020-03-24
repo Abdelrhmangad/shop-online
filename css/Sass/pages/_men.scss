@@ -1,0 +1,38 @@
+.men-page{
+    position: relative;
+    .page-header{
+        text-align: center;
+        margin-top: 70px;
+        font-size: 2.2rem;
+    }
+    .men-page-products{
+        .sorting{
+            position: absolute;
+            top:130px;
+            right: 20px;
+            font-size: 1rem;
+            
+            select{
+                padding: 10px;
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+        }
+        .best-deals{
+            @extend %products-styles-for-all-page;
+        }
+    }
+}
+
+// Start Categories footer Styles
+.categories-footer{
+    @extend %categories-footer-styles;
+    position: relative;
+}
+// End Categories footer Styles
+
+// Start Footer page style
+footer{
+    @extend %page-footer-styles;
+}
+// End Footer page style

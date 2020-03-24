@@ -1,0 +1,29 @@
+.men-page .page-header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  font-size: 2.2rem;
+}
+.men-page .men-page-products {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+}
+.men-page .men-page-products .sorting {
+  position: absolute;
+  right: 20px;
+  top: -80px;
+}
+.men-page .men-page-products .sorting #sortProducts {
+  padding: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+.men-page .page-products {
+  display: flex;
+  justify-content: space-around;
+}
+.men-page .page-products .men-product:hover {
+  color: red;
+}

@@ -1,36 +1,3 @@
 footer{
-    position: relative;
-    background-color:#222;
-    color: #eee;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3fr 1fr;
-    padding: 20px;
-    margin-top: -50px;
-    .footer-divs{
-        margin: 20px;
-        .foot-div-header{
-            color: rgb(158, 158, 158);
-            font-weight: bolder;
-        }
-        .foot-div-content{
-            @extend %list-styling;
-            display: block;
-
-            li{
-                cursor: pointer;
-                transition: .2s all ease-in-out;
-                &:hover{
-                   color: rgb(158, 158, 158);
-                }
-            }
-        }
-    }
-    blockquote{
-        margin: auto;
-        font-size: .8em;
-        position: absolute;
-        bottom: 50px;
-        left: 40vw;
-    }
+    @extend %page-footer-styles;
 }
