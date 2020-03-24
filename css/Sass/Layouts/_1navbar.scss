@@ -5,7 +5,7 @@ nav{
     .logo{
         img{
             width: 130px;
-            height: 100px;
+            height: 60px;
         }
     }
 
@@ -58,7 +58,7 @@ nav{
 }
 
 .site-pages{
-    background: #d6d6d6;
+    background: #f5f5f5;
     ul{
         @extend %list-styling;
 

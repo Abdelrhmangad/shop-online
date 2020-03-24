@@ -49,7 +49,7 @@ nav {
 
 nav .logo img {
   width: 130px;
-  height: 100px;
+  height: 60px;
 }
 
 nav .search {
@@ -133,7 +133,7 @@ nav .log-cart .cart {
 }
 
 .site-pages {
-  background: #d6d6d6;
+  background: #f5f5f5;
 }
 
 .site-pages ul li {
@@ -160,16 +160,17 @@ main .carousel .image p {
   position: absolute;
   z-index: 44444;
   top: 150px;
-  left: 50px;
-  font-size: 42px;
-  color: white;
-  background: rgba(70, 70, 70, 0.493);
+  left: 70px;
+  font-size: 2.2rem;
+  color: black;
+  background: rgba(196, 195, 195, 0.623);
 }
 
 main .carousel .image p button {
   padding: 10px 33px;
+  margin-top: 20px;
   font-size: 1.7rem;
-  background: #4545e2;
+  background: #F53B3B !important;
   border: none;
   color: white;
   border-radius: 8px;
@@ -203,15 +204,14 @@ main .carousel .dots {
 
 main .carousel .dots li {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
-  background: rgba(39, 39, 39, 0.685);
+  width: 25px;
+  height: 25px;
+  background: rgba(39, 39, 39, 0.575);
   border-radius: 50%;
-  border: 2px solid #a3a000;
 }
 
 main .carousel .dots li:hover {
-  background: #272727;
+  background: rgba(39, 39, 39, 0.247);
 }
 
 .categories {
@@ -277,7 +277,7 @@ main .carousel .dots li:hover {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 3fr;
       grid-template-rows: 3fr;
-  margin: 10px 50px;
+  margin: -10px 30px;
 }
 
 .categories .best-deals .deals-cards .deal, .categories .just-arrived .deals-cards .deal, .categories .trending-now .deals-cards .deal {
@@ -322,13 +322,13 @@ main .carousel .dots li:hover {
 }
 
 .categories .just-arrived {
-  padding: 50px;
+  padding: 30px;
   margin-bottom: 0px;
   background-color: #f6f6f6;
 }
 
 .categories .trending-now {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 

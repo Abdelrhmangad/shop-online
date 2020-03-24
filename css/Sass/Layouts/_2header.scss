@@ -11,14 +11,15 @@ main{
                 position: absolute;
                 z-index: 44444;
                 top:150px ;
-                left: 50px;
-                font-size: 42px;
-                color: rgb(255, 255, 255);
-                background: rgba(70, 70, 70, 0.493);
+                left: 70px;
+                font-size: 2.2rem;
+                color: black;
+                background: rgba(196, 195, 195, 0.623);
                 button{
                     padding: 10px 33px;
+                    margin-top: 20px;
                     font-size: 1.7rem;
-                    background: rgb(69, 69, 226);
+                    background: #F53B3B!important;
                     border: none;
                     color: white;
                     border-radius: 8px;
@@ -45,13 +46,12 @@ main{
             @extend %list-styling;
             li{
                 cursor: pointer;
-                width: 30px;
-                height: 30px;
-                background: rgba(39, 39, 39, 0.685);
+                width: 25px;
+                height: 25px;
+                background: rgba(39, 39, 39, 0.575);
                 border-radius: 50%;
-                border: 2px solid rgb(163, 160, 0);
                 &:hover{
-                    background:rgb(39, 39, 39); ;
+                    background:rgba(39, 39, 39, 0.247); ;
                 }
             }
         }
