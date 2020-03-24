@@ -37,7 +37,7 @@
         }
     }
 
-    .best-deals, .just-arrived{
+    .best-deals, .just-arrived,.trending-now{
         margin-top: 120px;
         h2{
             @extend %section-header;
@@ -55,6 +55,8 @@
                 &:hover{
                     @include prefixer(box-shadow,0 0 10px rgba(43,69,83,.25));
                     background: #fff;
+                    transform:scale(1.01);
+
                 }
                 .deal-img{
                     img{
@@ -85,16 +87,22 @@
     }
     .just-arrived{
         padding: 50px;
+        margin-bottom: 0px;
         background-color: #f6f6f6;
+    }
+
+    .trending-now{
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
     // Start Categories footer Styles
     .categories-footer{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         padding:20px 20px;
         margin-bottom: 0px;
-
+        background: #f6f6f6;
         .feat{
             display: flex;
             justify-content:space-around;
