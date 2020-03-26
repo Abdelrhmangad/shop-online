@@ -4,6 +4,10 @@
         text-align: center;
         margin-top: 70px;
         font-size: 2.2rem;
+
+        #items-number{
+            font-size: 1rem;
+        }
     }
     .men-page-products{
         .sorting{
@@ -23,6 +27,12 @@
         }
         .best-deals{
             @extend %products-styles-for-all-page;
+
+            .deals-cards{
+                .deal{
+                    transition: 1s all ease-in-out;
+                }
+            }
         }
     }
 }

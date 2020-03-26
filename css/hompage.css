@@ -428,6 +428,10 @@ main .carousel .dots li:hover {
   font-size: 2.2rem;
 }
 
+.men-page .page-header #items-number {
+  font-size: 1rem;
+}
+
 .men-page .men-page-products .sorting {
   position: absolute;
   top: 130px;
@@ -442,6 +446,11 @@ main .carousel .dots li:hover {
   color: #555;
   outline: none;
   width: 200px;
+}
+
+.men-page .men-page-products .best-deals .deals-cards .deal {
+  -webkit-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
 }
 
 .categories-footer {

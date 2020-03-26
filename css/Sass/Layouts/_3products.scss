@@ -40,6 +40,7 @@
     .best-deals, .just-arrived,.trending-now{
         @extend %products-styles-for-all-page;
     }
+    
     .just-arrived{
         padding: 30px;
         margin-bottom: 0px;
