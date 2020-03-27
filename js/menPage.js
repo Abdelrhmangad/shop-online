@@ -16,37 +16,62 @@
         let dealPrizes = document.getElementsByClassName("deal-prize");
         let prizesArr = Array.from(dealPrizes);
         const selectEle = document.getElementById('sortProducts');
+        let dealParent = document.getElementsByClassName('deal');
+        let dealParentArray = Array.from(dealParent);
         //---- End declaring main variables
 
-        function mapping(){
-            // -------- Start making arrat of all prizes
-            let prizesAddingArray = [];
+        // -------- Start making arrat of all prizes
+        let prizesAddingArray = [];
 
-            prizesArr.map(one=>{
-                eachPrize = one.dataset.prize;
-                prizesAddingArray.push(eachPrize);
-            })
-            // -------- End making arrat of all prizes
+        prizesArr.map(one=>{
+            eachPrize = one.dataset.prize;
+            prizesAddingArray.push(eachPrize);
+        })
+        // -------- End making arrat of all prizes
 
-            // Truning array of strings to numbers
-            let b = prizesAddingArray.map(function(item){
-                return parseInt(item,10);
-            })
+        // Truning array of strings to numbers
+        let b = prizesAddingArray.map(function(item){
+            return parseInt(item,10);
+        })
 
-            // sorting array numbers from low to high
-            let sortedArray;
-            function sortingElem(){
-                sortedArray = b.sort(function(a,c){return a - c}); 
+        // sorting array numbers from low to high
+        // let sortedArray;
+        function sortingElem(){
+            sortedArray = b.sort(function(a,c){return a - c}); 
+        }
+
+        sortingElem();
+
+        // Putting all parents elements to an array
+        let parentArr = [];
+            prizesArr.map(two=>{
+                parentArr.push(two.parentNode.parentElement)
+        })
+
+        function mappingOne(){
+            // 
+            for(el=0;el<parentArr.length;el++){
+
+                // Getting all prizes of all parents children
+                let finalPrize =  parseInt(parentArr[el].childNodes[3].childNodes[7].dataset.prize);
+
+                // Getting Prizes from parent Elements
+
+                parentArr.map(orderd=>{
+
+                    let orderdPar = orderd.childNodes[3].childNodes[7].dataset.prize;
+
+                    if(orderdPar == finalPrize){
+                        orderd.style.order = `-${finalPrize}`;
+                    }
+
+                })
+
             }
 
-            sortingElem();
-
-            // Putting all parents elements to an array
-            let parentArr = [];
-                prizesArr.map(two=>{
-                    parentArr.push(two.parentNode.parentElement)
-            })
-
+            // End Sorting the array elements
+        }
+        function mappingTwo(){
             // 
             for(el=0;el<parentArr.length;el++){
 
@@ -70,9 +95,14 @@
             // End Sorting the array elements
         }
 
-
         function consoling(selectEle){
-            console.log(selectEle)
+            if(selectEle == 2){
+                mappingTwo();
+                console.log(selectEle)
+            }else if(selectEle == 1){
+                mappingOne();
+                console.log(selectEle)
+            }
         }
         // start getting select element value
         function myFunction(el){

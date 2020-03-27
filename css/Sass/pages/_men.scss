@@ -27,12 +27,6 @@
         }
         .best-deals{
             @extend %products-styles-for-all-page;
-
-            .deals-cards{
-                .deal{
-                    transition: 1s all ease-in-out;
-                }
-            }
         }
     }
 }

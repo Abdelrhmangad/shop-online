@@ -448,11 +448,6 @@ main .carousel .dots li:hover {
   width: 200px;
 }
 
-.men-page .men-page-products .best-deals .deals-cards .deal {
-  -webkit-transition: 1s all ease-in-out;
-  transition: 1s all ease-in-out;
-}
-
 .categories-footer {
   position: relative;
 }
